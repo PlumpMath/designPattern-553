@@ -10,6 +10,34 @@ public class Usuario {
     private final String estado;
     private final String informacoes;
 
+    public String getNome() {
+	return nome;
+    }
+
+    public String getCpf() {
+	return cpf;
+    }
+
+    public String getDataNascimento() {
+	return dataNascimento;
+    }
+
+    public String getBairro() {
+	return bairro;
+    }
+
+    public String getCidade() {
+	return cidade;
+    }
+
+    public String getEstado() {
+	return estado;
+    }
+
+    public String getInformacoes() {
+	return informacoes;
+    }
+
     public Usuario(UsuarioBuilder usuarioBuilder) {
 	this.nome = usuarioBuilder.nome;
 	this.cpf = usuarioBuilder.cpf;
@@ -70,7 +98,7 @@ public class Usuario {
 	    return this;
 	}
 
-	public Usuario builde() {
+	public Usuario build() {
 	    return new Usuario(this);
 	}
     }
